@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <button id="click">Click Here</button>
+
+</body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$('#button').click(function() {
+  var h =
+  '<iframe width="1280" height="720" src="https://www.youtube.com/embed/mOgYmN1RcPA?autoplay=1" frameborder="0" allowfullscreen>' +
+  '</iframe>' +
+  '<iframe width="1280" height="720" src="https://www.youtube.com/embed/tx1LX80fot8?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+  $('body').html(h);
+});
+</script>
+
+</html>
