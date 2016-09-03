@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
+<style>
+ h1 {
+   font-size: 200px;
+   color: white;
+ }
+
+</style>
 <body>
-
   <button id="click">Click Here</button>
-
 </body>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-$('#button').click(function() {
+console.log("AAAAAAAAA");
+$('#click').click(function() {
   var h =
-  '<iframe width="1280" height="720" src="https://www.youtube.com/embed/mOgYmN1RcPA?autoplay=1" frameborder="0" allowfullscreen>' +
+  '<center><h1>CONGRATS ON MAKING TFTI</h1></center>' +
+  '<iframe class="vid" width="320" height="180" src="https://www.youtube.com/embed/mOgYmN1RcPA?autoplay=1" frameborder="0" allowfullscreen>' +
   '</iframe>' +
-  '<iframe width="1280" height="720" src="https://www.youtube.com/embed/tx1LX80fot8?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+  '<iframe class="vid" width="320" height="180" src="https://www.youtube.com/embed/tx1LX80fot8?autoplay=1" frameborder="0" allowfullscreen></iframe>';
   $('body').html(h);
+  $('body').css('background-image', 'url(https://media.giphy.com/media/xeXEpUVvAxCV2/giphy.gif)');
+  $('body').css(' background-repeat', 'repeat');
 });
 </script>
 
