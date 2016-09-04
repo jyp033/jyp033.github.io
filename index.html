@@ -4,17 +4,37 @@
  h1 {
    font-size: 200px;
    color: white;
+   margin-bottom: 0;
  }
 #click{
-  top: 50%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
   background-color: #EFC2D0;
   color: white;
 }
+
+#stuff {
+  margin: 0;
+}
+
+body {
+  background-image: url(https://scontent-lax3-1.xx.fbcdn.net/t31.0-8/13268262_10206639891421334_451950065375033185_o.jpg);
+  -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
 </style>
 <body>
-  <center>
-    <button id="click">Click Here</button>
-</center>
+    <center>
+      <div id="stuff">
+        <h3>Magic TFTI Button</h3>
+        <button id="click">Click Here</button>
+    </div>
+  </center>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -23,10 +43,18 @@ console.log("AAAAAAAAA");
 $('#click').click(function() {
   var h =
   '<center><h1>CONGRATS ON MAKING TFTI</h1></center>' +
+  '<img src="https://scontent-lax3-1.xx.fbcdn.net/v/t34.0-0/s261x260/12713925_10205873455180907_1593112156_n.jpg?oh=8866f3a0e756c246a3d55ba17012ed9d&oe=57CDAA5E">' +
+  '<br><br><br><br><br><br><br><br><br><br><br>' +
   '<iframe class="vid" width="320" height="180" src="https://www.youtube.com/embed/mOgYmN1RcPA?autoplay=1" frameborder="0" allowfullscreen>' +
   '</iframe>' +
   '<iframe class="vid" width="320" height="180" src="https://www.youtube.com/embed/tx1LX80fot8?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+
   $('body').html(h);
+
+  $("body").css('-o-background-size', '400px 202px');
+  $("body").css('background-size', '400px 202px');
+  $("body").css('-webkit-background-size', '400px 202px');
+  $("body").css('-moz-background-size', '400px 202px');
   $('body').css('background-image', 'url(https://media.giphy.com/media/xeXEpUVvAxCV2/giphy.gif)');
   $('body').css(' background-repeat', 'repeat');
 });
